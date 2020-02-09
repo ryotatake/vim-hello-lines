@@ -1,0 +1,72 @@
+*hello_lines.txt*	日本語ヘルプ
+
+Author  : ryotatake
+License : MIT license  {{{
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of this software and associated documentation files (the
+    "Software"), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+}}}
+
+==============================================================================
+目次						*hello_lines-contents*
+
+概要				|hello_lines-introduction|
+使い方				|hello_lines-usage|
+インターフェイス		|hello_lines-interface|
+  コマンド			  |hello_lines-commands|
+  関数				  |hello_lines-functions|
+
+
+==============================================================================
+概要						*hello_lines-introduction*
+
+*hello_lines* は現在行、もしくは範囲指定の行の先頭に"hello
+"を追加して返すだけのVimプラグインです。
+
+最新版:
+https://github.com/user/hello_lines.vim
+
+
+==============================================================================
+使い方						*hello_lines-usage*
+
+*現在行に対して使う ~
+|:HelloLines|を実行する。
+
+*選択範囲に対して使う ~
+範囲を選択して|:'<,'>HelloLines|を実行する
+
+
+==============================================================================
+インターフェイス				*hello_lines-interface*
+
+------------------------------------------------------------------------------
+コマンド					*hello_lines-commands*
+
+:[range]HelloLines					*:HelloLines*
+	範囲指定した行の行頭に"hello "をつけて返す。
+
+
+------------------------------------------------------------------------------
+関数						*hello_lines-functions*
+
+hello_lines#hello()				*hello_lines#hello()*
+	|:HelloLines|の実装。
+
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:noet:fen:
